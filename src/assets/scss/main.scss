@@ -1,0 +1,262 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;box-sizing: border-box;} 
+body{
+    font-size:.256rem!important;
+    font-family:Poppins-Medium, Poppins;
+    color: #FFFFFF;
+} 
+html,body,#app{
+    width: 100%;
+    height: 100%;
+}
+ul,ol{list-style-type:none;} 
+select,input,img,select{vertical-align:middle;} 
+ 
+a{
+    text-decoration:none;
+} 
+
+#app{
+    width: 100%;
+    height: 100%;
+
+}
+.language-popover{
+    background: rgba(0,0,0,0.77)!important;
+    border: none!important;
+    border-radius: .35rem!important;
+    .list{
+        text-align: center;
+        line-height: .6rem;
+        border: 1px solid transparent;
+        border-radius: .35rem;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: Poppins-SemiBold, Poppins;
+        font-weight: 600;
+        cursor: pointer;
+        &.active{
+            border: 1px solid #00FF66;
+            color: #00FF66;
+        }
+    }
+}
+.chatPopper{
+    background: rgba(0,0,0,0.77)!important;
+    border: none!important;
+    border-radius: .35rem!important;
+    padding: .2rem 0!important;
+    .list{
+        text-align: center;
+        line-height: .6rem;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: Poppins-SemiBold, Poppins;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            background: #1b1b1b;
+        }
+        img{
+            width: .3rem;
+            margin-right: .2rem;
+        }
+       
+    }
+}
+.Editionpopper{
+    background: linear-gradient(180deg, #FFFBF5 0%, #FFF0D9 100%)!important;
+    border-radius: .35rem!important;
+    padding: .4rem!important;
+    .list{
+        background: #FFFFFF;
+        padding: .5rem .2rem;
+        border-radius: .35rem!important;
+        margin-top: .25rem;
+        font-size: .37rem;
+        font-family: Poppins-Bold, Poppins;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        .info-content{
+            display: flex;
+            justify-content: space-between;
+            .xsmf{
+                position: absolute;
+                font-size: 12px;
+                background: #A2FFBC;
+                border-radius: 12px 12px 12px 12px;
+                opacity: 1;
+                border: 1px solid #04DB00;
+                color: #007737;
+                padding: .05rem .1rem;
+                right: .1rem;
+                bottom: .1rem;
+            }
+        }
+        img{
+            width: .4rem;
+        }
+        &:first-child{
+            margin-top: 0;
+        }
+        &.BasicEdition{
+            background: #EAFFD9;
+            border: 1px solid #199D3E;
+            color: #00982B;
+        }
+        &.PLUSEdition{
+            background: linear-gradient(148deg, #FFFFFF 0%, #FFF1DC 100%);
+            opacity: 1;
+            border: 1px solid #FFC366;
+            color: #C37600;
+        }
+        .plus-info{
+            margin-top: .4rem;
+            .button{
+                margin-top: .4rem;
+                background: linear-gradient(87deg, #FFC56C 0%, #FFD38E 100%);
+                border-radius:.2222rem;
+                opacity: 1;
+                font-size: .259rem;
+                font-family: Poppins-Bold, Poppins;
+                font-weight: bold;
+                color: #5D441D;
+                text-align: center;
+                cursor: pointer;
+                line-height: .8rem;
+            }
+            .info{
+                display: flex;
+                justify-content: space-between;
+                font-size: 12px;
+                align-items: center;
+                .sbutton{
+                    background: #FFDA7D;
+                    border-radius: .2222rem;
+                    opacity: 1;
+                    color: #7E6200;
+                    border: 1px solid #FFAB2C;
+                    padding: .1rem .2rem;
+                }
+                .right{
+                    text-align: right;
+                }
+                .plus-number{
+                    font-size: .296rem;
+                    font-family: Poppins-Bold, Poppins;
+                    color: #643D00;
+                    .big{
+                        font-size: .37rem;
+                        font-weight: bold;
+                        .ew{
+                            color: #FFB700;
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+}
+.el-popover.el-popper{
+    min-width: 50px!important;
+}
+.el-form-item__error{
+    margin-top: 4px;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #1b1b1b inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+.el-message-box{
+    background: #141414!important;
+    border: 1px solid #363637!important;
+    .el-message-box__message{
+        color: #ffffff!important;
+    }
+    .el-button{
+        &.ok{
+            border: 1px solid #00FF66;
+            color: #FFFFFF;
+            font-size: 14px;
+            background: #00FF66;
+            color: #000000;
+        }
+        &.cancel{
+            border: 1px solid #4c4d4f;
+            background: #141414;
+            color: #FFFFFF;
+            font-size: 14px;
+        }
+    }
+}
+
+*::-webkit-scrollbar {
+    width: 2px; /* 滚动条的宽度 */
+    height: 5px; /* 滚动条的高度 */
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #333333; /* 滚动条轨道的背景颜色 */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #888; /* 滚动条拇指的颜色 */
+    border-radius: 2px; /* 拇指的边框半径 */
+}
+.el-checkbox.el-checkbox--large .el-checkbox__inner{
+    width: 18px!important;
+    height: 18px!important;
+    border-radius: 100px;
+}
+.el-checkbox__inner::after{
+    height: 10px!important;
+    width: 5px!important;
+    left: 5px!important;
+}
+.el-checkbox__inner{
+    background: #1C1E1F!important;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner{
+    background: #1C1E1F!important;
+    border-color: #ffffff!important;
+}
+.el-checkbox__inner:hover{
+    border-color: #ffffff!important;
+}
+.fontYellow{
+    color: #FF5C00;
+    font-weight:bold ;
+  }
+  .payStatusDialog{
+    background: #FFF0D9!important;
+    border-radius: .37rem!important;
+    .btn{
+        background: #55351A!important;
+        border-radius: .18rem!important;
+        color: #FFFFFF;
+        width: 50%;
+        margin: 0 auto;
+        line-height: .8rem;
+        cursor: pointer;
+    }
+    .text{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: .37rem;
+        font-family: Roboto-Medium, Roboto;
+        font-weight: 500;
+        color: #000000;
+        img{
+            width: .8rem;
+        }
+    }
+  }
